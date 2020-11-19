@@ -1,0 +1,103 @@
+extends layout
+
+block content
+  .fullscreen.nopadding
+    #header
+      h1#centerSlogan GROWING UP
+      h2#centerSubTitle Körper, Liebe, Sexualität
+    .header
+      h1#continue Teenagermagazin
+
+  .white
+    h1 Das Magazin
+    img#preview.floatright(src='images/preview.jpg')
+    p Dieses Heft soll so etwas wie ein GPS sein, das Teenagern hilft, sich im „Strassennetz Pubertät“ zu orientieren. Fakten, Infos, Fragen und Beispiele unterstützen die Jugendlichen dabei, sich zu den Themen rund um Körper, Liebe und Sexualität eine Meinung zu bilden. Bewusst haben wir für unser Magazin die Fotos eines Live-Shootings verwendet und auf die Nachbearbeitung der Bilder verzichtet. Wir mögen es, Menschen und Themen real, ehrlich und alltagsnah abzubilden. Der Selbsttest gegen Ende des Heftes zeigt den Teenagern, ob sie den Durchblick haben und die Adressen von Fachleuten und Beratungsstellen helfen weiter, falls die Jugendlichen noch Fragen haben oder Hilfe brauchen.Das Heft eignet sich für den Einsatz in Schulklassen ebenso wie als Gesprächshilfe für Sexualaufklärung in der Familie.
+    p Herzlichen Dank für Ihr Interesse!
+    p Regula Lehmann und das growing up-Team
+    //a(href="GrowingUp-preview.pdf") Leseprobe
+
+  .semitrans
+    h1 Inhalt
+    ol
+      li Umbauprojekt Pubertät
+      li Sich selber mögen
+      li Sex haben, intim werden, "Liebe machen"
+      li Ganz schön weiblich
+      li Ganz schön männlich
+      li Voll verknallt: Verliebtheit, Liebe & Co.
+      li Mehr als Sex: Lieb-Haber werden
+      li Themen und Fragen
+      li Sex macht schwanger: Kleines grosses "Wunder Mensch"
+      li Ungeplant Schwanger
+      li Familienplanung und Verhütungsmethoden
+      li Sexuell übertragbare Krankheiten
+      li Sexuelle Orientierung
+      li Selbstschutz und Selbstbehauptung
+      li Belästigung, Übergriffe und sexuelle Gewalt
+      li Sexting
+      li Alles Porno oder was?
+      li "Loverboys" und Mewnschenhandel
+      li Selbsttest
+      li Links und Adressen
+      li Impressum
+    //h3 Vorschau
+    //  iframe.block(src="pdf/GrowingUp-preview.pdf")
+
+    h2 Bestellen und Kontakt
+    p Bei Interesse nehmen wir gerne ihre Bestellung entgegen. Für weitere Fragen und Feedback erreichen Sie mich unter rlehmann@bluewin.ch zur Verfügung.
+    form.flexColumn
+      .flexRow
+        label(for="vorname") Vorname:
+        input(type="vorname" id="vorname")
+
+      .flexRow
+        label(for="susname") Name:
+        input(type="text" id="susname")
+
+      .flexRow
+        label(for="strasse") Strasse/Nr:
+        input(type="text" id="strasse")
+
+      .flexRow
+        label(for="ort") Ort:
+        input(type="text" id="ort")
+
+      .flexRow
+        label(for="plz") PLZ:
+        input(type="number" id="plz")
+
+      .flexRow
+        label(for="count") Stückzahl:
+        input(type="number" id="count")
+
+      .flexRow
+        label(for="tel") Tel-Nummer:
+        input(type="tel" id="tel")
+
+      .flexRow
+        input(type="submit" value="Email senden" onclick="openMail(vorname.value, susname.value, strasse.value, ort.value, plz.value, count.value, tel.value)")
+
+    h2 Vision und Spenden
+    p Mit "growing up" stellen wir Schweizer Oberstufenschülern ein Heft zur Verfügung, das Sexualität altersgerecht und beziehungsorientiert thematisiert. Weil dieses Projekt durch Spenden finanziert wird, bitten wir um Sponsorenbeiträge.
+    br
+    p Mit CHF 5.- kann ein Probeheft plus Versand finanziert werden.
+    p Mit CHF 50.- kann eine ganze Oberstufenklasse mit growing up beliefert werden.
+
+    br
+    b Sponsoring growing up: Ja, ich spende
+    br
+    p Bitte überweisen Sie den gewünschten Betrag mit dem Vermerk „Teenagermagazin“ auf folgendes Konto:
+    b CH07 0900 0000 1520 0464 6 oder Konto 15-200464-6
+    br
+    b Elterninitiative Sexualerziehung
+    b 8044 Zürich
+    br
+    p Herzlichen Dank für Ihre Unterstützung
+
+  .white
+    h2 Herausgeber
+    b Regula Lehmann
+    p Jahrgang 1967, freiberuflich als Autorin, Präventionsfachfrau, Kursleiterin, Referentin und Elterncoach tätig. Verheiratet und Mutter von vier erwachsenen Kindern.
+
+    b Fachbeirat
+    p Prof. (US) Dr. Jakob Pastötter; Sexual- und Erziehungswissenschaftler Jessica Imhof; Sozialdiakonin Bereich Jugend, Paar und Familientherapeutin i.A. Claudia Ringger; Lehrerin Sekundarstufe I Georg Walter; Lehrer, Heilpädagoge, Supervisor, Eheberater
